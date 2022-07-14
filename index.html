@@ -386,6 +386,34 @@
                     <use href="./img/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="form" name="data-transfer"autocomplete="on">
+                <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
+                <div role="group" class="form-group-field">
+                    <label class="form-label" for="user-name">Имя</label>
+                    <div class="form-field">
+                        <svg class="input-icon" width="12px"  height="12px">
+                            <use href="./img/icons.svg#icon-human"></use>
+                        </svg>
+                        <input class="form-input" type="text" name="user-name" id="user-name" minlength="3" placeholder=" " required autofocus>
+                    </div>
+                    <label class="form-label" for="user-phone">Tелефон</label>
+                    <div class="form-field">
+                        <svg class="input-icon" width="14px"  height="14px">
+                            <use href="./img/icons.svg#icon-tel"></use>
+                        </svg>
+                        <input class="form-input" type="tel" name="user-phone" id="user-phone" placeholder=" " required>
+                    </div>
+                    <label class="form-label" for="user-mail">Почта</label>
+                    <div class="form-field">
+                        <svg class="input-icon" width="16px"  height="12px">
+                            <use href="./img/icons.svg#icon-mail"></use>
+                        </svg>
+                        <input class="form-input" type="mail" name="user-mail" id="user-mail" placeholder=" " required>
+                    </div>
+                    <label class="form-label" for="user-notes">Комментарий</label>
+                    <textarea class="form-textarea" name="user-notes" id="user-notes" role="3" placeholder="Введите текст"></textarea>
+                </div>
+            </form>
         </div>
     </div>   
 <!-- Подключение Скрипта -->
