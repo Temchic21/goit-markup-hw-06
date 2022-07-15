@@ -248,12 +248,16 @@ min-width: 200px;
 height: 50px;
 border-width: 0;
 padding: 10px 32px 10px 32px;
+
+transition-property: var(--link-text-color), transform;
+    transition-duration:250ms;
+    transition-timing-function: var(--timing-function);
 }
 
 
 .btn-hero:hover,
 .btn-hero:focus{
-    background: #2196F3;
+    background: #188CE8;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 }
@@ -969,7 +973,7 @@ transition-timing-function: var(--timing-function);
 
 .form-submit-btn:hover,
 .form-submit-btn:focus{
-    background-color: var(--link-text-color);
+    background-color: #188CE8;
 }
 
 
@@ -980,6 +984,7 @@ transition-timing-function: var(--timing-function);
     fill: var(--background-text-color);
 }
 
+/* STYLES BACKDROP */
 
 .backdrop{
     position: fixed;
@@ -1004,8 +1009,6 @@ transition-timing-function: var(--timing-function);
     transform: translate(-50%, -50%) scale(0.9);
 }
 
-
-
 .modal{
     position: absolute;
     top: 50%;
@@ -1023,7 +1026,6 @@ transition-timing-function: var(--timing-function);
     transition: transform 250ms var(--timing-function);
 
     padding: 40px;
-  
 }
 
 .modal-close-btn{
@@ -1041,7 +1043,6 @@ transition-timing-function: var(--timing-function);
     border-radius: 50%;
     padding: 0;
     cursor: pointer;
-
 }
 
 
@@ -1058,8 +1059,6 @@ transition-timing-function: var(--timing-function);
 .close-btn-icon:focus{
     fill: var(--link-text-color);
 }
-
-
 
 .form{
     display: flex;
@@ -1108,7 +1107,6 @@ margin-bottom: 12px;
 .form-field:focus > .input-icon{
     fill: var(--link-text-color);
 }
-	
 
 .input-icon{
     position: absolute;
@@ -1117,8 +1115,7 @@ margin-bottom: 12px;
     transform: translateY(-50%);
     fill: var(--header-text-color);
 
-
-    transition-property: var(--link-text-color), transform;
+transition-property: var(--link-text-color), transform;
 transition-duration:250ms;
 transition-timing-function: var(--timing-function);
 }
@@ -1139,8 +1136,6 @@ transition-duration:250ms;
 transition-timing-function: var(--timing-function);
 }
 
-
-
 .form-input:focus-within,
 .form-input:hover,
 .form-input:focus {
@@ -1148,7 +1143,6 @@ transition-timing-function: var(--timing-function);
     fill: var(--link-text-color);
 }
 	
-
 .form-textarea{
     display: block;
     width: 100%;
@@ -1173,3 +1167,85 @@ transition-timing-function: var(--timing-function);
 	fill: var(--link-text-color);
 }
 	
+.form-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: #757575;
+
+ margin-bottom: 30px;
+}
+
+.checkbox{
+    appearance: none;
+    position: absolute;
+}
+
+.last-label {
+    margin-bottom: 0;
+    margin-left: 8px;
+  }
+  
+  .checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+  
+    background-color: inherit;
+    border: 2px solid var(--header-text-color);
+    border-radius: 2px;
+
+    transition-property: var(--link-text-color), transform;
+    transition-duration:250ms;
+    transition-timing-function: var(--timing-function);
+  }
+
+.checkbox:checked + .checkbox-icon{
+    background-color: var(--link-text-color);
+    background-image: url(../img/icon\ check\ .svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: transparent;
+
+}
+
+.form-link{
+    color: var(--link-text-color);
+}
+
+.from-button{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button-primary{
+    padding: 10px 32px;
+    min-width: 200px;
+    background-color: var(--link-text-color);
+    color: var(--background-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+border-radius: 4px;
+border-width: 0;
+cursor: pointer;
+
+transition-property: var(--link-text-color), transform;
+    transition-duration:250ms;
+    transition-timing-function: var(--timing-function);
+}
+
+.button-primary:focus,
+.button-primary:hover{
+    background-color: #188CE8;
+}
